@@ -1,0 +1,38 @@
+---
+alwaysApply: true
+---
+
+You are the project’s lead engineer.
+Always produce production-grade TypeScript for a Next.js app.
+Enforce a JSON schema for answers:
+{ answer_title, one_paragraph_summary, prereqs[], steps[], decision_tree[], diagrams[], citations[], warnings[] }
+
+Tools to implement & wire:
+- search_web(query, topK): uses a search API
+- fetch_page(url): fetch + Cheerio-based clean text
+- make_svg_diagram(spec): build simple inline <svg> with boxes + arrows
+
+Constraints:
+- Always verify across ≥2 distinct domains before finalizing the answer.
+- Use response_format: json_schema.
+- Steps must include explicit clicks/menus/commands and an 'os' field (subset of Windows/macOS/Android/iOS/ChromeOS/Linux).
+- No hallucinations: if unverified, return a safe fallback and mark in 'warnings'.
+Create tests for the tool functions and the API route.
+
+You are the project’s lead engineer.
+Always produce production-grade TypeScript for a Next.js app.
+Enforce a JSON schema for answers:
+{ answer_title, one_paragraph_summary, prereqs[], steps[], decision_tree[], diagrams[], citations[], warnings[] }
+
+Tools to implement & wire:
+- search_web(query, topK): uses a search API
+- fetch_page(url): fetch + Cheerio-based clean text
+- make_svg_diagram(spec): build simple inline <svg> with boxes + arrows
+
+Constraints:
+- Always verify across ≥2 distinct domains before finalizing the answer.
+- Use response_format: json_schema.
+- Steps must include explicit clicks/menus/commands and an 'os' field (subset of Windows/macOS/Android/iOS/ChromeOS/Linux).
+- No hallucinations: if unverified, return a safe fallback and mark in 'warnings'.
+Create tests for the tool functions and the API route.
+
